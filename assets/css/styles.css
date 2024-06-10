@@ -1,0 +1,484 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 160px;
+  background-color: #A6192E;
+  padding: 0px 16px;
+}
+.header i {
+  font-size: 30px;
+  color: white !important;
+}
+.header .menu {
+  width: 54px;
+  height: 58px;
+}
+.header .logo {
+  width: 253px;
+  height: 104px;
+}
+
+.image-section {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.intro {
+  height: 390px;
+}
+.intro h1 {
+  color: #A6192E;
+  font-family: "HeinzLabel";
+  width: 80%;
+  text-align: center;
+  font-size: 45px;
+}
+.intro span {
+  color: #A6192E;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Intro";
+  font-weight: 400;
+}
+
+.cards {
+  background-color: #A6192E;
+  height: 900px;
+  padding: 50px 60px;
+}
+.cards .box {
+  width: 47%;
+  background-color: white;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.cards .box-body {
+  flex: 1 1 auto;
+  padding: 20px;
+  position: relative;
+}
+.cards .box-body h3 {
+  color: #A6192E;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Heinz";
+  font-size: 36px;
+}
+.cards .box-body p {
+  text-align: center;
+  font-size: 30px;
+  color: #A6192E;
+  font-size: 20px;
+}
+.cards .box-body a {
+  text-decoration: none;
+  color: #A6192E;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.accordion {
+  --bs-accordion-active-color: white !important;
+  border: none !important;
+  --bs-accordion-active-bg: #A6192E !important;
+}
+
+.accordion-button {
+  font-size: 25px !important;
+  padding: 0 !important;
+  border: none !important;
+  font-family: "HeinzLabel";
+  border-radius: 0 !important;
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  margin-left: 0 !important;
+  order: -1;
+  --bs-accordion-btn-icon-width: 40px;
+  --bs-accordion-btn-icon-height: 40px;
+  background-image: url("../css/plus.svg") !important;
+  margin: 10px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  color: black !important;
+  background-image: url("../css/dash.svg") !important;
+}
+
+.accordions {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.accordions .accordion {
+  margin-top: 20px;
+}
+.accordions .accordion-bodi {
+  width: 80%;
+  height: 90%;
+}
+.accordions .accordion-bodi h1 {
+  color: #A6192E;
+  font-family: "HeinzLabel";
+  text-align: center;
+  font-size: 50px;
+}
+.accordions .accordion-bodi .accordion-body {
+  padding: 40px 80px !important;
+  background-color: #A6192E;
+  font-family: "Intro";
+  color: white;
+}
+
+.location {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+.location .card {
+  outline: 2px solid white;
+  outline-offset: -10px;
+  height: 100%;
+  width: 90%;
+}
+.location .card-body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white !important;
+  text-align: center;
+  background-color: #A6192E;
+}
+.location .card-title {
+  font-family: "HeinzLabel";
+  font-size: 30px;
+}
+.location .card-footer {
+  display: flex;
+  justify-content: center;
+  border: none !important;
+  padding-bottom: 20px !important;
+  background-color: #A6192E !important;
+}
+.location .card-link {
+  color: white;
+  font-size: 16px;
+}
+.location .card-link:hover {
+  color: white;
+}
+
+.footer {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  border-top: 1px solid black;
+}
+.footer p {
+  font-weight: 500;
+}
+.footer .links {
+  display: flex;
+}
+.footer .links a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: "HeinzLabel";
+  font-weight: 500;
+}
+.footer .links .link-middle {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.food {
+  background-color: #A6192E;
+  padding: 30px;
+}
+.food .card {
+  height: 100%;
+}
+.food .card, .food .card-img-top {
+  border-radius: 0px;
+  border: none;
+}
+.food .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.food .card-title {
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "HeinzLabel";
+  color: #A6192E;
+}
+.food .card-text {
+  font-size: 20px;
+  font-family: "Intro";
+  width: 90%;
+  color: #A6192E;
+}
+.food .card-footer {
+  background-color: white;
+  border: none;
+}
+.food .card-footer a {
+  text-decoration: none;
+}
+.food .card-footer a p {
+  color: #A6192E;
+  font-family: "HeinzLabel";
+  font-size: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    height: 94px;
+  }
+  .header .logo {
+    width: 105px;
+    height: 42px;
+  }
+  .header .menu {
+    width: 31px;
+    height: 33px;
+  }
+  .food .card-text {
+    width: 95%;
+  }
+  .intro {
+    padding: 20px 0px;
+  }
+  .intro h1 {
+    font-size: 27px;
+    width: 90%;
+  }
+  .intro span {
+    font-size: 15px;
+  }
+  .cards {
+    padding: 30px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .cards .box {
+    width: 100%;
+  }
+  .cards .box .box-body {
+    width: 100%;
+  }
+  .cards .box .box-body h3 {
+    font-size: 25px;
+  }
+  .cards .box .box-body a {
+    position: static;
+  }
+  .accordion {
+    margin-top: 60px !important;
+  }
+  .accordion-item {
+    margin-top: 10px;
+  }
+  .accordion-bodi h1 {
+    width: 100%;
+    margin: 0px auto;
+    font-size: 30px !important;
+  }
+  .accordions .accordion-bodi {
+    width: 90%;
+  }
+  .accordions .accordion-bodi .accordion-body {
+    font-size: 14px !important;
+    padding: 30px 40px !important;
+  }
+  .accordion-button {
+    font-size: 23px !important;
+  }
+  .location {
+    padding: 10px;
+  }
+  .location .card {
+    width: 100%;
+  }
+  .links a {
+    font-size: 11px;
+  }
+  .links p {
+    font-size: 8px;
+  }
+  .links .link-middle {
+    padding: 0px 4px;
+    border: none !important;
+  }
+  .footer {
+    padding: 5px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .footer p {
+    font-size: 12px;
+    margin: 2px 0 0 0;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .intro h1 {
+    font-size: 35px;
+  }
+  .intro span {
+    font-size: 20px;
+  }
+  .cards {
+    padding: 50px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .cards .box {
+    width: 100%;
+  }
+  .cards .box .box-body {
+    width: 90%;
+  }
+  .cards .box .box-body a {
+    position: static;
+  }
+  .accordion-bodi {
+    width: 90% !important;
+  }
+  .accordion-bodi h1 {
+    width: 90%;
+    margin: 0px auto;
+    font-size: 23px !important;
+  }
+  .accordion-header {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .intro h1 {
+    font-size: 40px;
+  }
+  .accordion-bodi {
+    width: 70% !important;
+  }
+  .accordion-bodi h1 {
+    width: 80%;
+    margin: 0px auto;
+    font-size: 30px !important;
+  }
+  .accordion-header {
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 1300px) {
+  .header {
+    padding: 0px 40px !important;
+  }
+  .intro {
+    height: 430px;
+  }
+  .intro h1 {
+    font-size: 55px;
+    width: 90%;
+  }
+  .cards {
+    height: 1168px;
+  }
+  .cards .box-body {
+    width: 100%;
+  }
+  .cards .box-body h3 {
+    font-size: 40px;
+  }
+  .cards .box-body p {
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .food {
+    background-color: #A6192E;
+    padding: 30px 100px;
+  }
+  .food .card {
+    height: 100%;
+  }
+  .food .card, .food .card-img-top {
+    border-radius: 0px;
+    border: none;
+  }
+  .food .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .food .card-title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "HeinzLabel";
+    color: #A6192E;
+  }
+  .food .card-text {
+    font-size: 20px;
+    font-family: "Intro";
+    width: 80%;
+    color: #A6192E;
+  }
+  .food .card-footer {
+    background-color: white;
+    border: none;
+  }
+  .food .card-footer a {
+    text-decoration: none;
+  }
+  .food .card-footer a p {
+    color: #A6192E;
+    font-family: "HeinzLabel";
+  }
+  .accordions .accordion-bodi h1 {
+    width: 70%;
+    margin: auto;
+  }
+  .accordions, .accordion {
+    margin-top: 3rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

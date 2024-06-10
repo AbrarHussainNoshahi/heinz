@@ -1,0 +1,486 @@
+$primary : #A6192E;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 160px;
+    background-color: $primary;
+    padding: 0px 16px;
+    i{
+        font-size: 30px; 
+        color: white !important;
+    }
+    .menu{
+        width: 54px;
+        height: 58px;
+    }
+    .logo{
+        width: 253px;
+        height: 104px;
+    }
+}
+.image-section{
+    width: 100%;
+    height: fit-content;
+}
+.intro{
+    height: 390px;
+    h1{
+        color: $primary;
+        font-family: 'HeinzLabel';
+        width: 80%;
+        text-align: center;
+        font-size: 45px;
+        // font-weight: bold;
+    }
+    span{
+        color: $primary;
+        font-size: 24px;
+        text-align: center;
+        font-family: 'Intro';
+        font-weight: 400;
+    }
+}
+.cards{
+    background-color: $primary;
+    height: 900px;
+    padding: 50px 60px;
+    .box{
+        width: 47%;
+        background-color: white;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        // border: 1px solid white;
+    }
+    .box-body{
+        // width: 80%;
+        flex: 1 1 auto;
+        padding: 20px ;
+        position: relative;
+        // border: 1px solid black;
+        h3{
+            color: $primary;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Heinz';
+            font-size: 36px;
+        }
+        p{
+            text-align: center;
+            font-size: 30px;
+            color: $primary;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: $primary;
+            font-weight: bold;
+            font-size: 18px;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+    }
+}
+.accordion{
+    --bs-accordion-active-color: white !important;
+    border: none !important;
+    --bs-accordion-active-bg: #A6192E !important;
+}
+.accordion-button{
+    font-size: 25px !important;
+    padding: 0 !important;
+    border: none !important;
+    font-family: 'HeinzLabel';
+    border-radius: 0 !important;
+}
+.accordion-item{
+    border: none !important;
+}
+.accordion-button:focus{
+
+    box-shadow: none !important;
+}
+.accordion-button::after{
+    margin-left: 0 !important;
+    order: -1;
+    --bs-accordion-btn-icon-width: 40px;
+    --bs-accordion-btn-icon-height: 40px;
+    background-image: url('../css/plus.svg') !important;
+    margin: 10px !important;
+}
+.accordion-button:not(.collapsed){
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed)::after{
+    color: black !important;
+    background-image: url('../css/dash.svg') !important;
+}
+.accordions{
+    height: fit-content;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .accordion{
+        margin-top: 20px;
+    }
+    .accordion-bodi{
+        width: 80%;
+        height: 90%;
+        // border: 1px solid black;
+        h1{
+            color: $primary;
+            font-family: 'HeinzLabel';
+            text-align: center;
+            font-size: 50px;
+        }
+        .accordion-body{
+            padding: 40px 80px !important;
+            background-color: #A6192E;
+            font-family: 'Intro';
+            color: white;
+          }
+    }
+}
+
+.location{
+    height: fit-content;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    .card{
+        outline: 2px solid white;
+        outline-offset: -10px;
+        height: 100%;
+        width: 90%;
+    }
+    .card-body{
+        height: fit-content;
+        color: white !important;
+        text-align: center;
+        background-color: $primary;
+    }
+    .card-title{
+        font-family: 'HeinzLabel';
+        font-size: 30px;
+    }
+    .card-footer{
+        display: flex;
+        justify-content: center;
+        border: none !important;
+        padding-bottom: 20px !important;
+        background-color: $primary !important;
+    }
+    .card-link{
+        color: white;
+        font-size: 16px;
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+.footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    border-top: 1px solid black;
+    p{
+        font-weight: 500;
+    }
+    .links{
+        display: flex;
+        a{
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-family: 'HeinzLabel';
+            font-weight: 500;
+        }
+        .link-middle{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+        }
+    }
+}
+.food{
+    background-color: #A6192E;
+    padding: 30px;
+    .card{
+        height: 100%;
+    }
+    .card, .card-img-top{
+        border-radius: 0px;
+        border: none;
+    }
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .card-title{
+        font-size: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-family: 'HeinzLabel';
+        color: $primary;
+    }
+    .card-text{
+        font-size: 20px;
+        font-family: 'Intro';
+        width: 90%;
+        color: $primary;
+    }
+    .card-footer{
+        background-color: white;
+        border: none;
+        a{
+            text-decoration: none;
+            p{
+                color: $primary;
+                font-family: 'HeinzLabel';
+                font-size: 20px;
+            }
+        }
+    }
+ }
+
+@media (max-width: 575.98px) {
+    .header{
+        height: 94px;
+        .logo{
+            width: 105px;
+            height: 42px;
+        }
+        .menu{
+            width: 31px;
+            height: 33px;
+        }
+    }
+    .food{
+        .card-text{
+            width: 95%;
+        }
+    }
+    .intro{
+        padding: 20px 0px;
+        h1{
+            font-size: 27px;
+            width: 90%;
+        }
+        span{
+            font-size: 15px;
+        }
+    }
+    .cards{
+        padding: 30px;
+        height: fit-content;
+        .box{
+            width: 100%;
+            .box-body{
+                width: 100%;
+                h3{
+                    font-size: 25px;
+                }
+                a{
+                    position: static;
+                }
+            }
+        }
+    }
+    .accordion{
+        margin-top: 60px !important;
+    }
+    .accordion-item{
+        margin-top: 10px;
+    }
+    .accordion-bodi{
+        // width: 95% !important;
+        h1{
+            width: 100%;
+            margin: 0px auto;
+            
+            font-size: 30px !important;
+        }
+    }
+    .accordions{
+        .accordion-bodi{
+            width: 90%;
+            .accordion-body{
+                font-size: 14px !important;
+                padding: 30px 40px !important;
+            }
+        }
+    }
+    .accordion-button{
+        font-size: 23px !important;
+    }
+    .location{
+        padding: 10px;
+        .card{
+            width: 100%;
+        }
+    }
+    .links{
+        a{
+            font-size: 11px;
+        }
+        p{
+            font-size: 8px;
+        }
+        .link-middle{
+            padding: 0px 4px;
+            border: none !important;
+        }
+    }
+    .footer{
+        padding: 5px;
+        height: fit-content;
+        p{
+            font-size: 12px;
+            margin: 2px 0 0 0;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .intro{
+        h1{
+            font-size: 35px;
+        }
+        span{
+            font-size: 20px;
+        }
+    }    
+    .cards{
+        padding: 50px;
+        height: fit-content;
+        .box{
+            width: 100%;
+            .box-body{
+                width: 90%;
+                a{
+                    position: static;
+                }
+            }
+        }
+    }
+    .accordion-bodi{
+        width: 90% !important;
+        h1{
+            width: 90%;
+            margin: 0px auto;
+            font-size: 23px !important;
+        }
+    }
+    .accordion-header{
+        font-size: 20px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .intro{
+        h1{
+            font-size: 40px;
+        }
+    }    
+    .accordion-bodi{
+        width: 70% !important;
+        h1{
+            width: 80%;
+            margin: 0px auto;
+            font-size: 30px !important;
+        }
+    }
+    .accordion-header{
+        font-size: 25px !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .header{
+        padding: 0px 40px !important;
+    }
+    .intro{
+        // padding: 20px 0px;
+        // height: 594px;
+        height: 430px;
+        h1{
+            font-size: 55px;
+            width: 90%;
+        }
+    }
+    .cards{
+        height: 1168px;
+        .box-body{
+            width: 100%;
+            h3{
+                font-size: 40px;
+            }   
+            p{
+                padding-top: 20px;
+                font-size: 30px;
+            }
+        }
+     }
+     .food{
+        background-color: #A6192E;
+        padding: 30px 100px;
+        .card{
+            height: 100%;
+        }
+        .card, .card-img-top{
+            border-radius: 0px;
+            border: none;
+        }
+        .card-body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        .card-title{
+            font-size: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-family: 'HeinzLabel';
+            color: $primary;
+        }
+        .card-text{
+            font-size: 20px;
+            font-family: 'Intro';
+            width: 80%;
+            color: $primary;
+        }
+        .card-footer{
+            background-color: white;
+            border: none;
+            a{
+                text-decoration: none;
+                p{
+                    color: $primary;
+                    font-family: 'HeinzLabel';
+                }
+            }
+        }
+     }
+     .accordions{
+        .accordion-bodi{
+            h1{
+                width: 70%;
+                margin: auto;
+            }
+        }
+     }
+     .accordions, .accordion{
+        margin-top: 3rem;
+     }
+}
